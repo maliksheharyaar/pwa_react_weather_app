@@ -17,6 +17,7 @@ const App = () => {
 
     return(
         <div className="main-container">
+            <h1 className="title"> PWA Weather Application</h1>
             <input 
                 type="text"
                 className="search"
