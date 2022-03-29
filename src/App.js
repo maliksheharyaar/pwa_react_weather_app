@@ -54,8 +54,7 @@ const App = () => {
                         <p>{weather.weather[0].description}</p>
                     </div>
 
-
-
+                    <hr></hr>
 
                     <div className="forcast-grid">
                         <div className="forcast-row">
