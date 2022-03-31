@@ -25,10 +25,8 @@ const App = () => {
             setWeather(weatherData); //Assign data to weather variable 
             setQuery(''); //Reset query
 
-
             const forcastData = await fetchForcast(weatherData.coord.lat, weatherData.coord.lon);
             setForcast(forcastData); //Assign forcastData to forcast variable
-
 
 
         }
@@ -67,14 +65,8 @@ const App = () => {
                     <div className="forcast-grid">
                         <div className="forcast-row">
                             <h1 className="city-name">
-                                {console.log(d.getDay() + 3)}
-                                {console.log(weekday[0])}
-
-                                {console.log(parseInt(d.getDay()) + 3 === 7 ? true : false)}
-
                                 <span>{weekday[time1]}</span>
 
-                                {console.log(time1)}
                             </h1>
 
                             <div className="day-night-temp-forcast">
@@ -98,7 +90,6 @@ const App = () => {
                             <h1 className="city-name">
                                 <span>{weekday[time2]}</span>
 
-                                {console.log(time2)}
                             </h1>
 
                             <div className="day-night-temp-forcast">
@@ -122,7 +113,6 @@ const App = () => {
                             <h1 className="city-name">
                                 <span>{weekday[time3]}</span>
 
-                                {console.log(time3)}
                             </h1>
 
                             <div className="day-night-temp-forcast">
@@ -146,7 +136,6 @@ const App = () => {
                             <h1 className="city-name">
                                 <span>{weekday[time4]}</span>
 
-                                {console.log(time4)}
                             </h1>
 
                             <div className="day-night-temp-forcast">
