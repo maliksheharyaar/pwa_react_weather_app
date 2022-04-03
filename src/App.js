@@ -3,6 +3,8 @@ import { fetchForcast, fetchWeather } from "./api/fetchWeather";
 import './App.css';
 
 
+
+
 const App = () => {
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
@@ -61,7 +63,7 @@ const App = () => {
                     </div>
 
                     <hr></hr>
-
+                    
                     <div className="forcast-grid">
                         <div className="forcast-row">
                             <h1 className="city-name">
