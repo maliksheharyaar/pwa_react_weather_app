@@ -2,8 +2,8 @@ const CACHE_NAME = "weather-pwa-v1";
 const urlsToCache = [
   'index.html',
   'offline.html',
-  'images/icon-192x192.png',
-  'images/icon-512x512.png',
+  // 'images/icon-192x192.png',
+  // 'images/icon-512x512.png',
   'images/logo.png'
 ];
 
