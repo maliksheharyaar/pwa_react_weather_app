@@ -1,0 +1,73 @@
+.search-container {
+    position: relative;
+    width: fit-content;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    width: 400px;
+    outline: none;
+    padding: 20px 7% 20px 2%;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    background: rgba(250, 250, 250, 0.85);
+    text-align: left;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 400px;
+    background: rgba(250, 250, 250, 0.95);
+    border-radius: 0 0 20px 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+    color: #1e2432;
+}
+
+.suggestion-item:hover,
+.suggestion-item.selected {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.suggestion-item:last-child {
+    border-radius: 0 0 20px 20px;
+}
+
+/* Scrollbar styles */
+.suggestions-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.suggestions-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.suggestions-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.suggestions-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+} 
