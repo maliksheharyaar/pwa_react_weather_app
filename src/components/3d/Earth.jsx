@@ -34,8 +34,8 @@ function getArrowRotation(markerPos) {
 
 export default function Model({ lat, lon, ...props }) {
   const groupRef = useRef();
-  const { nodes } = useGLTF('/earth.gltf')
-  const colorMap = useLoader(TextureLoader, '/textures/Material.002_diffuse.jpeg')
+  const { nodes } = useGLTF(`${import.meta.env.BASE_URL}earth.gltf`)
+  const colorMap = useLoader(TextureLoader, `${import.meta.env.BASE_URL}textures/Material.002_diffuse.jpeg`)
   colorMap.flipY = false;
   const RADIUS = 100;
 
@@ -100,4 +100,4 @@ export default function Model({ lat, lon, ...props }) {
   )
 }
 
-useGLTF.preload('/earth.gltf')
+useGLTF.preload(`${import.meta.env.BASE_URL}earth.gltf`)
