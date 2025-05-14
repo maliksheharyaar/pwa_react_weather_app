@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg', 'images/icon-192x192.png', 'images/icon-512x512.png'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg', 'images/logo.png'],
       manifest: {
         name: 'PWA Weather Application',
         short_name: 'Weather App',
@@ -24,6 +24,11 @@ export default defineConfig({
           {
             src: 'images/icon-512x512.png',
             sizes: '512x512',
+            type: 'image/png'
+          },
+          {
+            src: 'images/logo.png',
+            sizes: '1024x1024',
             type: 'image/png'
           }
         ]
